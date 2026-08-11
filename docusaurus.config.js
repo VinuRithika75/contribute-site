@@ -187,6 +187,13 @@ const config = {
             label: 'Events',
           },
           { to: '/blog', label: 'Blog', position: 'right' },
+          {
+            href: '/blog/rss.xml',
+            label: 'RSS',
+            position: 'right',
+            className: 'header-rss-link',
+            'aria-label': 'Blog RSS feed',
+          },
         ],
       },
       footer: {
@@ -234,6 +241,14 @@ const config = {
               {
                 label: 'GitHub',
                 href: 'https://github.com/cncf/contribute-site',
+              },
+              {
+                label: 'RSS Feed',
+                href: '/blog/rss.xml',
+              },
+              {
+                label: 'Atom Feed',
+                href: '/blog/atom.xml',
               },
             ],
           },
